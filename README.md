@@ -20,6 +20,8 @@ npm install ng-prismjs
 
 ## Setup
 
+### Import the Module
+
 **app.module.ts**
 
 ```typescript
@@ -44,6 +46,27 @@ export class AppModule {
 }
 ```
 
+### Include Prism into your build process
+
+**vendor.ts**
+
+```typescript
+import 'prismjs'
+```
+
+### Add additional languages (optional)
+
+You can add support for additional languages by importing certain scripts.
+
+For example, to add typescript support, import `prism-typescript.js`.
+
+**app.module.ts**
+
+```typescript
+import { PrismModule } from 'ng-prismjs';
+import 'prismjs/components/prism-typescript';
+```
+
 ## Usage
 
 ### Create a code Snippet (make sure it is not compiled)
@@ -66,7 +89,9 @@ const snippet: string = require('!!raw-loader!./path/to/snippet.html');
 
 **app.component.ts**
 
-Bind the snippet to the `prism` component.
+Bind the snippet to the `prism` component and include a `language` property.
+
+The language must be one of the built-in languages supported by prismjs, or it can be one that you explicitly import.  See the `prismjs\components` for a full list of languages.  The format of a language component is `prism-<language>.js`.
 
 ```typescript
 import { Component } from '@angular/core';
