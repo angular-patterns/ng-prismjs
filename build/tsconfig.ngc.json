@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": ".",
+        "outDir": "",
+        "paths": {
+            "*": [
+                "../node_modules/*"
+            ]
+        },
+        "declaration": true,
+        "stripInternal": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "module": "es2015",
+        "target": "es2015",
+        "lib": [
+            "es2015",
+            "dom"
+        ],
+        "skipLibCheck": true,
+        "typeRoots": [
+            "../node_modules/@types/"
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "inlineSources": true
+    },
+    "files": [
+        "dist/public_api.ts"
+    ],
+    "angularCompilerOptions": {
+        "annotateForClosureCompiler": true,
+        "strictMetadataEmit": true,
+        "skipTemplateCodegen": true,
+        "flatModuleOutFile": "index.js",
+        "flatModuleId": "ng-prismjs"
+    }
+}

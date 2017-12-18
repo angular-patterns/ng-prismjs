@@ -1,0 +1,8 @@
+node_modules
+dist
+src/**/*.js
+e2e/app/**/*.js
+**/*.ngfactory.*
+**/*.ngsummary.*
+**/*.metadata.json
+npm-debug.log
