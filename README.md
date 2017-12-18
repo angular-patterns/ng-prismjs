@@ -60,8 +60,6 @@ You can add support for additional languages by importing certain scripts.
 
 For example, to add typescript support, import `prism-typescript.js`.
 
-**app.module.ts**
-
 ```typescript
 import { PrismModule } from 'ng-prismjs';
 import 'prismjs/components/prism-typescript';
