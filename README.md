@@ -1,4 +1,4 @@
-# ng-primsjs
+# ng-prismjs
 
 An angular component for syntax highlighting using primsjs.
 
