@@ -7,6 +7,10 @@
   "es2015": "dist/index.es6.js",
   "typings": "dist/index.d.ts",
   "metadata": "dist/index.metadata.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular-patterns/ng-prismjs"
+  },
   "scripts": {
     "start": "npm run dev",
     "serve": "webpack-dev-server --content-base dist --hot true --inline true",

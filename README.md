@@ -15,7 +15,7 @@ https://angular-patterns.github.io/ng-prismjs/
 
 Prismjs is a PEER depedency.
 
-npm install prismjs
+npm install prismjs <br />
 npm install ng-prismjs
 
 ## Setup
